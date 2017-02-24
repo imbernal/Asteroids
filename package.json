@@ -1,0 +1,29 @@
+{
+  "name": "Asteroids",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "reload -b",
+    "bundle": "browserify assets/js/main.js -o assets/js/prod.js",
+    "watch": "watchify assets/js/main.js -o assets/js/prod.js",
+    "compress": "uglifyjs assets/js/main.js assets/js/prod.js -o assets/js/bundle.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imbernal/Asteroids.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imbernal/Asteroids/issues"
+  },
+  "homepage": "https://github.com/imbernal/Asteroids#readme",
+  "devDependencies": {
+    "browserify": "^14.1.0",
+    "uglifyjs": "^2.4.10",
+    "watchify": "^3.9.0"
+  }
+}
